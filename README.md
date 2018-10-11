@@ -1,6 +1,33 @@
 
 # Arch Linux notes
 
+## aurman
+
+AUR helper with almost pacman syntax
+
+### Install:
+
+First install ```base-devel``` and ```python``` packages if missing. Clone the GitHub repository and install the compiled package:
+
+```
+git clone https://aur.archlinux.org/aurman.git
+cd aurman
+makepkg -si
+```
+### Using aurman:
+
+Search for application:
+
+```
+aurman -Ss <package>
+```
+
+Install an application using aurman:
+
+```
+aurman -S <package>
+```
+
 ## Transmission
 
 Blocklist:
