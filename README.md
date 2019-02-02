@@ -3,11 +3,11 @@
 
 ## aurman
 
-AUR helper with almost pacman syntax
+AUR helper with almost pacman syntax. **Since August 2018, the development has stopped. Use yay instead**.
 
 ### Install:
 
-First install ```base-devel``` and ```python``` packages if missing. Clone the GitHub repository and install the compiled package:
+First install ```base-devel``` and ```python``` packages if missing. Clone the GitHub repository and compile:
 
 ```
 git clone https://aur.archlinux.org/aurman.git
@@ -16,16 +16,44 @@ makepkg -si
 ```
 ### Using aurman:
 
-Search for application:
+Search for packages:
 
 ```
 aurman -Ss <package>
 ```
 
-Install an application using aurman:
+Install a package using aurman:
 
 ```
 aurman -S <package>
+```
+
+## yay
+
+Yet another Yogurt - An AUR Helper written in Go
+
+### Installation:
+
+First install ```base-devel``` package. Clone the GitHub repository and compile:
+
+```
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+
+### Using aurman:
+
+Search for packages:
+
+```
+yay -Ss <package>
+```
+
+Install a package using yay:
+
+```
+yay -S <package>
 ```
 
 ## Transmission
