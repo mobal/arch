@@ -42,7 +42,7 @@ cd yay
 makepkg -si
 ```
 
-### Using aurman:
+### Using yay:
 
 Search for packages:
 
