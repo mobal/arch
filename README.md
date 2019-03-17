@@ -1,33 +1,6 @@
 
 # Arch Linux notes
 
-## aurman
-
-AUR helper with almost pacman syntax. **Since August 2018, the development has stopped. Use yay instead**.
-
-### Install:
-
-First install ```base-devel``` and ```python``` packages if missing. Clone the GitHub repository and compile:
-
-```
-git clone https://aur.archlinux.org/aurman.git
-cd aurman
-makepkg -si
-```
-### Using aurman:
-
-Search for packages:
-
-```
-aurman -Ss <package>
-```
-
-Install a package using aurman:
-
-```
-aurman -S <package>
-```
-
 ## yay
 
 Yet another Yogurt - An AUR Helper written in Go
