@@ -42,3 +42,37 @@ If you have **IPv4** and **IPv6** addresses at once, port checking is not workin
 ```console
 87.98.162.88 portcheck.transmissionbt.com
 ```
+
+## zsh
+
+The Z shell (Zsh) is a Unix shell that can be used as an interactive login shell and as a command interpreter 
+for shell scripting. Zsh is an extended Bourne shell with a large number of improvements, including some 
+features of Bash, ksh, and tcsh. (from Wikipedia)
+
+### Installation:
+
+```
+pacman -S zsh
+```
+
+Change your default shell using the ```chsh``` command.
+
+To list all installed shells, run:
+
+```
+chsh -l
+```
+
+And to set ```zsh``` as default for your user do:
+
+```
+chsh -s /bin/zsh
+```
+
+Default bash configuration for zsh:
+
+```
+export PS1="[$USER@%m %1~]$ "
+alias ls="ls --color=auto"
+```
+
