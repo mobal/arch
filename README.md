@@ -74,5 +74,10 @@ Default bash configuration for zsh:
 ```
 export PS1="[$USER@%m %1~]$ "
 alias ls="ls --color=auto"
+bindkey "${terminfo[kich1]}" overwrite-mode
+bindkey "${terminfo[kdch1]}" delete-char
+bindkey "${terminfo[khome]}" beginning-of-line
+bindkey "${terminfo[kend]}" end-of-line
+bindkey "${terminfo[kpp]}" up-line-or-history
+bindkey "${terminfo[knp]}" down-line-or-history
 ```
-
