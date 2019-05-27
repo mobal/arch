@@ -81,3 +81,43 @@ bindkey "${terminfo[kend]}" end-of-line
 bindkey "${terminfo[kpp]}" up-line-or-history
 bindkey "${terminfo[knp]}" down-line-or-history
 ```
+
+## Adopt OpenJDK
+
+AdoptOpenJDK provides rock-solid OpenJDK binaries for the Java ecosystem and also provides infrastructure as code, and a Build farm for builders of OpenJDK, on any platform.
+
+[https://adoptopenjdk.net/](https://adoptopenjdk.net/)
+
+### Installation:
+
+Install ```java-environment-common``` and ```java-runtime-common``` packages:
+
+```
+pacman -S java-environment-common
+pacman -S java-runtime-common
+```
+
+Extract the downloaded binary to ```/usr/lib/jvm/<package>``` (for example: ```jdk-11.0.3+7``` or ```jdk8u212-b03```).
+
+Use ```archlinux-java status``` to list all available Java environments:
+
+```
+[mobal@think arch (master)]$ archlinux-java status
+Available Java environments:
+  jdk-11.0.3+7
+  jdk8u212-b03 (default)
+```
+
+Using ```archlinux-java set``` force <JAVA_ENV> as default:
+
+```
+archlinux-java set jdk8u212-b03
+```
+
+Check whether the change was successful:
+
+```
+java -version
+javac -version
+```
+
