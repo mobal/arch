@@ -10,8 +10,8 @@ Yet another Yogurt - An AUR Helper written in Go
 First install ```base-devel``` package. Clone the GitHub repository and compile:
 
 ```
-git clone https://aur.archlinux.org/yay.git
-cd yay
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
 makepkg -si
 ```
 
