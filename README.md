@@ -121,3 +121,6 @@ java -version
 javac -version
 ```
 
+## Useful links
+
+- [Install arch linux on ThinkPad T490](https://github.com/yukron/archlinux_thinkpad_t490)
